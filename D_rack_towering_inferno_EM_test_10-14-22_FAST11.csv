@@ -1,0 +1,134 @@
+Time,Window 5 Cab B Level,Window 8 Cab B Level,Window 7 Cab B Level,Window 3 Cab B Level,Window 9 Cab B DR250 Level,Window 2 Cab B Level,Window 10 DR250 Level,Window 6 Cab B Level,Window 1 Cab B Level,Window 4 Cab B Level,Target Level,Window 4 Cab B Faults,EM Faults: bc33acfffeb55312,5312::ac,5312::bst,5312::ccaf,5312::ccnk,5312::coak,5312::conk,5312::cv-1,5312::cv-10,5312::cv-11,5312::cv-12,5312::cv-13,5312::cv-14,5312::cv-15,5312::cv-2,5312::cv-3,5312::cv-4,5312::cv-5,5312::cv-6,5312::cv-7,5312::cv-8,5312::cv-9,5312::device-id,5312::dtch,5312::grp,5312::i,5312::ibv,5312::icfg,5312::id_,5312::ii,5312::isv,5312::meshAddress,5312::mst,5312::nid,5312::ost,5312::pfst,5312::pwr,5312::rc,5312::rprnt,5312::rxb,5312::rxd,5312::rxu,5312::scn,5312::seq,5312::sfst,5312::sladc,5312::t,5312::tnt,5312::txfl,5312::txnk,5312::txok,5312::txrt,5312::v
+10:29:49,100,100,100,100,100,100,100,100,41,100,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000002) active fields:
+----------------------------
+cell overvoltage
+PermanentFailAlert (0x00000002) failures:
+----------------------------
+safety cell overvoltage
+cmd>
+",79,192,3420,8105,22383,8105,3802,3709,3753,3607,3794,3737,3806,3712,3826,3598,3830,3762,3854,3515,3861,,1,-2,-13,54.124,31135,bc33acfffeb55312,0.112,0.001,19,45058,19,18695,0,hgh,79,0,535360,211,39288,-2,-1,2,1,3230,RTR,81,81,75950,4502,56166
+10:30:09,100,100,100,100,100,100,100,100,41,100,0,No Faults,No Faults,79,192,3420,8105,22383,8105,3802,3709,3753,3607,3794,3737,3806,3712,3826,3598,3830,3762,3854,3515,3861,,1,-2,-13,54.124,31135,bc33acfffeb55312,0.112,0.001,19,45058,19,18695,0,hgh,79,0,535360,211,39288,-2,-1,2,1,3230,RTR,81,81,75950,4502,56166
+10:30:31,100,100,100,100,100,100,100,100,36,100,0,No Faults,No Faults,79,192,3420,8105,22383,8105,3014,2955,2953,2894,3010,2954,2978,2950,2961,2894,3008,2952,2960,2893,3004,,1,-2,-13,44.18,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,79,0,535360,211,39288,-2,-1,0,1,3017,RTR,81,81,75950,4502,44382
+10:30:52,75,80,81,82,83,70,71,81,20,100,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",79,192,3420,8105,22383,8105,3014,2955,2953,2894,3010,2954,2978,2950,2961,2894,3008,2952,2960,2893,3004,,1,-2,-13,44.18,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,79,0,535360,211,39288,-2,-1,0,1,3017,RTR,81,81,75950,4502,44382
+10:31:13,75,65,57,65,64,70,71,62,20,100,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",79,192,3420,8105,22383,8105,3014,2955,2953,2894,3010,2954,2978,2950,2961,2894,3008,2952,2960,2893,3004,,1,-2',-13,44.18,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,79,0,535360,211,39288,-2,-1,0,1,3017,RTR,81,81,75950,4502,44382
+10:31:35,56,45,57,46,64,50,52,43,13,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",78,2240,3420,8105,22383,8105,3223,3215,3213,3206,3219,3213,3211,3216,3218,3207,3219,3212,3213,3204,3220,,1,-2,-4677,48.348,31135,bc33acfffeb55312,10.262,0.102,19,45058,19,263,0,low,78,0,535360,211,39288,-2,-1,0,1,3176,RTR,81,81,75950,4502,48212
+10:31:56,45,39,38,41,51,42,52,40,10,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",78,2240,3420,8105,22383,8105,3223,3215,3213,3206,3219,3213,3211,3216,3218,3207,3219,3212,3213,3204,3220,,1,-2,-4677,48.348,31135,bc33acfffeb55312,10.262,0.102,19,45058,19,263,0,low,78,0,535360,211,39288,-2,-1,0,1,3176,RTR,81,81,75950,4502,48212
+10:32:17,50,51,43,47,62,54,50,45,15,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",78,2240,3420,8105,22383,8105,3223,3215,3213,3206,3219,3213,3211,3216,3218,3207,3219,3212,3213,3204,3220,,1,-2,-4677,48.348,31135,bc33acfffeb55312,10.262,0.102,19,45058,19,263,0,low,78,0,535360,211,39288,-2,-1,0,1,3176,RTR,81,81,75950,4502,48212
+10:32:38,50,51,43,47,77,54,50,45,15,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",76,2240,3420,8105,22383,8105,3165,3144,3141,3120,3161,3143,3147,3143,3147,3119,3162,3142,3145,3118,3161,,1,-2,-4677,47.152,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,76,0,535360,211,39288,-2,-1,0,1,3198,RTR,81,81,75950,4502',47158
+10:32:59,61,74,54,57,77,79,60,56,25,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyAlert (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+cmd>
+",76,2240,3420,8105,22383,8105,3165,3144,3141,3120,3161,3143,3147,3143,3147,3119,3162,3142,3145,3118,3161,,1,-2,-4677,47.152,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,76,0,535360,211,39288,-2,-1,0,1,3198,RTR,81,81,75950,4502,47158
+10:33:21,71,94,64,67,100,100,71,66,36,100,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000008) active fields:
+----------------------------
+overcurrent during discharge
+PermanentFailAlert (0x00000008) failures:
+----------------------------
+safety overcurrent in discharge
+cmd>
+",76,2240,3420,8105,22383,8105,3165,3144,3141,3120,3161,3143,3147,3143,3147,3119,3162,3142,3145,3118,3161,,1,-2,-4677,47.152,31135,bc33acfffeb55312,10.238,0.102,19,45058,19,263,0,low,76,0,535360,211,39288,-2,-1,0,1,3198,RTR,81,81,75950,4502,47158
+10:33:42,22,94,20,67,100,63,0,18,0,0,0,No Faults,No Faults,75,128,3420,8105,22383,8105,3347,3358,3361,3369,3346,3357,3348,3358,3359,3368,3354,3352,3356,3367,3349,,1,-2,1035,50.508,31135,bc33acfffeb55312,10.263,0.102,19,45058,19,2.68435719e+08,0,hgh,75,0,535360,211,39288,-2,-1,0,1,3217,RTR,81,81,75950,4502,50347
+10:34:03,19,67,9,10,45,63,10,18,7,97,0,No Faults,No Faults,75,128,3420,8105,22383,8105,3004,2951,2946,2890,2999,2947,2966,2949,2957,2891,2990,2948,2954,2890,2995,,1,-2,1035,44.096,31135,bc33acfffeb55312,10.26,0.102,19,45058,19,263,0,low,75,0,535360,211,39288,-2,-1,0,1,3235,RTR,81,81,75950,4502,44277
+10:34:24,1,47,9,0,27,32,0,9,0,97,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",75,128,3420,8105,22383,8105,3004,2951,2946,2890,2999,2947,2966,2949,2957,2891,2990,2948,2954,2890,2995,,1,-2,1035,44.096,31135,bc33acfffeb55312,10.26,0.102,19,45058,19,263,0,low,75,0,535360,211,39288,-2,-1,0,1,3235,RTR,81,81,75950,4502,44277
+10:34:44,1,34,0,0,8,32,0,0,0,97,0,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",75,128,3420,8105,22383,8105,3004,2951,2946,2890,2999,2947,2966,2949,2957,2891,2990,2948,2954,2890,2995,,1,-2,1035,44.096,31135,bc33acfffeb55312,10.26,0.102,19,45058,19,263,0,low,75,0,535360,211,39288,-2,-1,0,1,3235,RTR,81,81,75950,4502,44277
+10:35:06,0,14,0,0,8,12,0,0,0,97,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",75,4224,3420,8105,22383,8105,3267,3268,3265,3267,3263,3266,3260,3270,3271,3268,3264,3265,3266,3266,3267,,1,-2,1035,49.156,31135,bc33acfffeb55312,10.274,0.102,19,45058,19,2311,0,low,75,0,535360,211,39288,-2,-1,256,1,3302,RTR,81,81,75950,4502,48990
+10:35:30,0,7,0,0,0,4,0,0,0,97,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",75,4224,3420,8105,22383,8105,3267,3268,3265,3267,3263,3266,3260,3270,3271,3268,3264,3265,3266,3266,3267,,1,-2,1035,49.156,31135,bc33acfffeb55312,10.274,0.102,19,45058,19,2311,0,low,75,0,535360,211,39288,-2,-1,256,1,3302,RTR,81,81,75950,4502,48990
+10:35:51,5,20,5,5,12,17,5,5,5,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",76,4224,3420,8105,22383,8105,3151,3130,3125,3104,3146,3127,3132,3130,3133,3104,3147,3127,3130,3103,3147,,1,-2,1035,46.924,31135,bc33acfffeb55312,10.255,0.102,19,45058,19,2311,0,low,76,0,535360,211,39288,-2,-1',256,1,3295,RTR,81,81,75950,4502,46937
+10:36:11,5,20,5,5,27,17,5,5,5,100,100,No Faults,"Using config file:c:\users\rmarck\pycharmprojects\halio-cycle-tester\gwctl_config_files\config_cc9470000131.json
+Result for bc33acfffeb55312: batmon faults
+SafetyStatus (0x00000100) active fields:
+----------------------------
+overtemperature during charge
+PermanentFailAlert (0x00000100) failures:
+----------------------------
+AFE register
+cmd>
+",76,4224,3420,8105,22383,8105,3151,3130,3125,3104,3146,3127,3132,3130,3133,3104,3147,3127,3130,3103,3147,,1,-2,1035,46.924,31135,bc33acfffeb55312,10.255,0.102,19,45058,19,2311,0,low,76,0,535360,211,39288,-2,-1,256,1,3295,RTR,81,81,75950,4502,46937

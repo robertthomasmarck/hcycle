@@ -1,0 +1,5 @@
+Click
+pydantic
+requests
+attrs
+toml

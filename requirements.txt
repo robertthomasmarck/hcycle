@@ -5,3 +5,4 @@ attrs~=22.1.0
 toml~=0.10.2
 AWSIoTPythonSDK~=1.5.2
 setuptools~=63.4.1
+PyYAML~=6.0

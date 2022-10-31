@@ -51,7 +51,7 @@ class SiteController:
         gateway_dict = {}
         for gwy in gateways_raw:
             if "hardwareId" in gwy:
-                gateway_dict[gwy['name']] = {"hardwareId": gwy['hardwareId'], "id": gwy['id']}
+                gateway_dict[gwy['name']] = {"hardwareId": gwy['hardwareId'], "id": gwy['id'], "nodeId": gwy["nodeId"]}
             if echo: click.echo(
                 f"{gwy['name']} - Cloud Id: {gwy['nodeId']}  Hardward Id: {gwy['parts'][0]['hardwareId']}")
         return gateway_dict
@@ -78,12 +78,17 @@ class SiteController:
             return None
 
     def build_driver_map(self):
+        """
+        This is hacky and stupid. The gateways/[gatewayId]/nodes endpoint does not work.
+        So I can put anything in as the gateway Id and it will return all nodes for the site.
+        :return:
+        """
         driver_map = {}
+        url = self.make_target_url(target=f'gateways/123/nodes')
+        node_list = api.get(url, headers=request_config.headers).json()['results']
         for gwy, gwy_ids in self.gateways.items():
-            url = self.make_target_url(target=f'gateways/{gwy_ids["id"]}/nodes')
-            response = api.get(url, headers=request_config.headers).json()
-            for node in response['results']:
-                if node['type'] == 'ecdriver':
+            for node in node_list:
+                if gwy_ids['nodeId'] == node['gatewayId'] and node['type'] == 'ecdriver':
                     driver_map[node['name']] = {'gatewayCloudId': gwy_ids['id'],
                                                 'gatewayHardwareId': gwy_ids['hardwareId'],
                                                 'driverHardwareId': node['nodeId'],

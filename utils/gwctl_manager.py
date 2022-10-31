@@ -73,22 +73,24 @@ class GWCTLManager:
                     em_command = f"{target_site} {base_command} {em_id} ".replace("'", "")
                     #Get the response and turn it into a string
                     p = str(subprocess.check_output(em_command + f"{r_serial_command}"))
+                    print(em_command + f"{r_serial_command}")
                     #Get the useful data, remove the formatting commands, and add a unique character to help with parsing
                     p = p[p.find("Info called") + 11: len(p)].replace("\\n\\t", "~").replace("\\n", "").split("~")
                     a = self.cleaner_upper(p, delimiter=" = ")
-                    a["netstats"] = a["netstats"].replace("map[", "").replace("]", "").replace(" ", "~").split('~')
-                    a = self.cleaner_upper(a["netstats"], delimiter=":", add_to=a)
-                    emi = a["emi"]
-                    cv = emi[emi.find("cv:"):emi[:-1].find("]")+1]
-                    emi = emi.replace(cv, "").replace("map[", "").replace("]", "").replace(" ", "~").split('~')
-                    a = self.cleaner_upper(emi, delimiter=":", add_to=a)
-                    cv = cv.replace("cv:[", "").replace("]", "").split(' ')
-                    count = 1
-                    for v in cv:
-                        el = "{" + f"\"cv-{count}\": \"{v}\"" + "}"
-                        a.update(json.loads(el))
-                        count += 1
-                    remove = ['emi', 'flt', 'lockout', 'mac', 'utc',
+                    # a["netstats"] = a["netstats"].replace("map[", "").replace("]", "").replace(" ", "~").split('~')
+                    # a = self.cleaner_upper(a["netstats"], delimiter=":", add_to=a)
+                    if "emi" in a.keys():
+                        emi = a["emi"]
+                        cv = emi[emi.find("cv:"):emi[:-1].find("]")+1]
+                        emi = emi.replace(cv, "").replace("map[", "").replace("]", "").replace(" ", "~").split('~')
+                        a = self.cleaner_upper(emi, delimiter=":", add_to=a)
+                        cv = cv.replace("cv:[", "").replace("]", "").split(' ')
+                        count = 1
+                        for v in cv:
+                            el = "{" + f"\"cv-{count}\": \"{v}\"" + "}"
+                            a.update(json.loads(el))
+                            count += 1
+                    remove = ['flt', 'lockout', 'mac', 'utc',
                               'visible', 'name', 'netstats', 'dstatus',
                               'state', 'entry_type', 'last_step_id', 'igu-id',
                               'archItemId', 'ip', 'version', 'groups',
@@ -97,8 +99,23 @@ class GWCTLManager:
                     for k in remove:
                         a.pop(k, None)
                     a = dict(sorted(a.items()))
+                    mem = self.get_em_memory(em_list)
+                    a.update({em_id[-4:] + ' mem': mem})
                     info.update({em_id: a})
         return info
+
+    def get_em_memory(self, em_list):
+        info = {}
+        for gateway_id, config_file in self.config_list.items():
+            for em_gateway_id, em_id in em_list.items():
+                if gateway_id == em_gateway_id:
+                    target_site = f"{new_gwctl} --config '{config_file}'"
+                    em_command = f"{target_site} node remoteSerialCommand {em_id} \"bufpool stats\"".replace("'", "")
+                    p = str(subprocess.check_output(em_command))
+                    # p = p[p.find("Info called") + 11: len(p)].replace("\\n\\t", "~").replace("\\n", "").split("~")
+                    p = p[p.find("high") + 28: len(p)-7].replace("\\t", "~").replace("\\r", "|").replace("\\n", "")
+
+        return p
 
     def cleaner_upper(self, raw_response, delimiter, add_to=None):
         if add_to == None:

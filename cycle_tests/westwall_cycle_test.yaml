@@ -1,0 +1,11 @@
+---
+name: "Basic cycle test for DR-250 and connected energy manager."
+environment: stage
+site: GlareControlTestSLC
+group: "Test Group: DR-250 LC"
+cycles: 20
+cycle-period: 10
+check-rate: 30
+energy-manager: True
+rand: False
+start-level: 0

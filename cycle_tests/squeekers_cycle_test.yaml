@@ -1,0 +1,10 @@
+---
+environment: stage
+site: GlareControlTestSLC
+group: "Test Group: DR-200 HP"
+cycles: 20
+cycle-period: 10
+check-rate: 20
+energy-manager: True
+rand: False
+start-level: 100

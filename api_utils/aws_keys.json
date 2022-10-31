@@ -1,0 +1,10 @@
+{
+  "stage": {
+    "env": "stage",
+    "endpoint": "a1jkvs6rb1q15m.iot.us-west-2.amazonaws.com",
+    "key": "AKIAZHI2SOYURQPI2LOM",
+    "secret": "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"
+  },
+  "prod": {}
+
+}

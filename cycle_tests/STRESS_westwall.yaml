@@ -1,0 +1,12 @@
+---
+name: "Stress cycle test for DR-250 and connected energy manager."
+environment: stage
+site: GlareControlTestSLC
+group: "Test Group: DR-250 LC"
+cycles: 30
+cycle-period: 2
+check-rate: 15
+energy-manager: True
+rand: False
+start-level: 0
+

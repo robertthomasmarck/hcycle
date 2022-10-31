@@ -1,0 +1,9 @@
+{
+    "gatewaymac": "cc947000018e",
+    "command_channel": "command_d17235af-28bb-4c7a-9499-0ba07482dcf0",
+    "info_channel": "info_d17235af-28bb-4c7a-9499-0ba07482dcf0",
+    "publish_key": "pub-c-06e4c219-3ba5-447e-bbb4-548dd0b4af29",
+    "subscribe_key": "sub-c-68c959ec-17ba-11e6-9f24-02ee2ddab7fe",
+    "auth_key": "dae152b1-9452-40eb-a2c5-bdc8febdc9bc",
+    "site": "d17235af-28bb-4c7a-9499-0ba07482dcf0"
+}

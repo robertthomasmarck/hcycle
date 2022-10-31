@@ -9,11 +9,14 @@ from cycle_helpers.cycle_calls import call_cycles
 
 from utils.gwctl_manager import GWCTLManager
 
+CONTEXT_SETTINGS = dict(help_option_names=['?','-h','--h','-help','--help'])
 
-@click.group()
+@click.group(context_settings=CONTEXT_SETTINGS)
 def cli():
-    click.echo("Halio Cycle Tester Version: 0.1.0")
+    """Halio Cycle Tester Version: 0.1.0.
 
+    \b
+    Can be called with either 'hcycle' or 'hcy'."""
 
 @cli.command()
 @click.option("-env", is_flag=False, flag_value="stage", default="stage",

@@ -1,19 +1,27 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Halio Cycle Tester CLI Tool',
-    version='0.0.1',
-    py_modules=['hcycle'],
+    version='0.1.0',
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'Click',
         'pydantic',
         'requests',
         'attrs',
-        'toml'
+        'toml',
+        'requests',
+        'attr',
+        'toml',
+        'AWSIoTPythonSDK',
+        'PyYAML'
+
     ],
     entry_points={
         'console_scripts': [
             'hcycle = hcycle:cli',
+            'hcy = hcycle:cli'
         ],
     },
 )

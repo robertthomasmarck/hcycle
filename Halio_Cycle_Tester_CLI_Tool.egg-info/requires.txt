@@ -3,3 +3,8 @@ pydantic
 requests
 attrs
 toml
+requests
+attr
+toml
+AWSIoTPythonSDK
+PyYAML

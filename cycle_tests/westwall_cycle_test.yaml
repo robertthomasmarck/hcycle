@@ -6,6 +6,6 @@ group: "Test Group: DR-250 LC"
 cycles: 20
 cycle-period: 10
 check-rate: 30
-energy-manager: True
+energy-manager: False
 rand: False
 start-level: 0

@@ -4,9 +4,9 @@ environment: stage
 site: D rack Towering Infernos
 group: "Cab B"
 cycles: 20
-cycle-period: 1
+cycle-period: 1.5
 check-rate: 20
-energy-manager: True
+energy-manager: False
 rand: False
-start-level: 100
+start-level: 0
 

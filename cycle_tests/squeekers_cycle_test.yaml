@@ -5,6 +5,6 @@ group: "Test Group: DR-200 HP"
 cycles: 20
 cycle-period: 10
 check-rate: 20
-energy-manager: True
+energy-manager: False
 rand: False
 start-level: 100

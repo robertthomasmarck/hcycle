@@ -109,6 +109,10 @@ def run_ctest(stored_test, wait_to_start):
     yaml_set = yaml.safe_load(file)
     if "name" in yaml_set.keys():
         click.echo(yaml_set["name"])
+    if "start-level" not in yaml_set.keys():
+        start_level = 0
+    else:
+        start_level = yaml_set["start-level"]
     click.echo(f"Running cycles in: {yaml_set['environment']}\n"
                f"Site:{yaml_set['site']}\n"
                f"Group: {yaml_set['group']}\n"
@@ -123,10 +127,30 @@ def run_ctest(stored_test, wait_to_start):
                 check_rate=yaml_set['check-rate'],
                 energy_manager=yaml_set["energy-manager"],
                 rand=yaml_set["rand"],
-                start_level=yaml_set["start-level"],
+                start_level=start_level,
                 file=None,
                 debug=False,
                 wait_to_start=wait_to_start)
+
+@cli.command()
+def make_test():
+    """Generate a test file."""
+    name = input("Enter test name: ")
+    env = input("Enter environment (prod|stage): ").lower()
+    while env not in ["stage", "prod"]:
+        env = input("Enter environment, must be either prod or stage): ").lower()
+    site = input("Enter site name (must be exact): ")
+    group = input("Enter group name (must be exact): ")
+    cycles = input("Enter the number of cycles: ")
+    cycle_period = input("Enter how long each cycle should be: ")
+    check_rate = input("Enter how often you want to gather data (i.e. every 20 seconds): ")
+    em = input("Enter if you want to gather energy manager data: ")
+    rand = input("Do you want to randomize the levels for each cycle? y/n: ")
+    want_start_level = input("Do you want to set the level for the first cycle? If no, the 1st cycle will default to 0, y/n: ")
+    if want_start_level == "y":
+        input("Set start level (0-100): ")
+
+
 
 
 @cli.command()
